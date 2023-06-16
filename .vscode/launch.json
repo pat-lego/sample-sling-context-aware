@@ -9,7 +9,7 @@
             "name": "Debug (Attach) - AEM",
             "request": "attach",
             "port": 8000,
-            "hostName": "localhost"
+            "hostName": "localhost" 
         }
     ]
 }

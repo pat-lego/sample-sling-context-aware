@@ -12,6 +12,6 @@
         reportSuiteId="\0"/>
     <com.adobe.aem.support.ctx.core.ctxconfig.PersonCtxConfig
         jcr:primaryType="nt:unstructured"
-        first_name="Patrique"
-        last_name="Legault"/>
+        first.name="Patrique"
+        last.name="Legault"/>
 </jcr:root>

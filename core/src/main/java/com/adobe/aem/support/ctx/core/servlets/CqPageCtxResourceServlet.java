@@ -62,7 +62,7 @@ public class CqPageCtxResourceServlet extends SlingSafeMethodsServlet {
             JsonObject personCtxConfigJson = new JsonObject();
 
             personCtxConfigJson.addProperty("first_name", config.first_name());
-            personCtxConfigJson.addProperty("last_name", config.first_name());
+            personCtxConfigJson.addProperty("last_name", config.last_name());
 
             resp.setStatus(SlingHttpServletResponse.SC_OK);
             resp.setContentType("application/json");
