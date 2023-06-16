@@ -137,3 +137,15 @@ The project comes with the auto-public repository configured. To setup the repos
     -D artifactId="ctxaware" \
     -D groupId="com.adobe.aem.support"
  ```
+
+ ## How to invoke
+
+ 1. Build the project using `mvn clean install`
+ 2. Install the all/target zip package via crx/packmgr
+ 3. The system will expose 3 servlets for you to interact with
+    - http://localhost:4502/content/ctxaware.ctx.json (A)
+    - http://localhost:4502/content/ntFolder.ctx.json (B)
+    - http://localhost:4502/content/slingFolder.ctx.json (C)
+4. When you invoke (A) and (C) it will work you will see a JSON come back with data
+5. When you invoke B you will not see data come back because the sling:configRef is not present under the node
+
