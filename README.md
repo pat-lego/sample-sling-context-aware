@@ -149,3 +149,15 @@ The project comes with the auto-public repository configured. To setup the repos
 4. When you invoke (A) and (C) it will work you will see a JSON come back with data
 5. When you invoke B you will not see data come back because the sling:configRef is not present under the node
 
+## Additional Debugging
+
+For additional debugging please fork the following repo and additional logging to these locations to further understand the invocations
+
+This code is what retrieves the location for the configuration in the repository
+- https://github.com/apache/sling-org-apache-sling-caconfig-impl/blob/org.apache.sling.caconfig.impl-1.6.0/src/main/java/org/apache/sling/caconfig/impl/ConfigurationBuilderImpl.java#L188-L233
+
+This code is what retrieves the properties within the sling:config object
+- https://github.com/apache/sling-org-apache-sling-caconfig-impl/blob/org.apache.sling.caconfig.impl-1.6.0/src/main/java/org/apache/sling/caconfig/impl/ConfigurationProxy.java#L120-L140 
+
+
+Repository: https://github.com/apache/sling-org-apache-sling-caconfig-impl/tree/org.apache.sling.caconfig.impl-1.6.0 
