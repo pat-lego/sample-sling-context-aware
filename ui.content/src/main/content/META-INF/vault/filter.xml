@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/ctxaware" mode="replace"/>
+    <filter root="/content/ctxaware" mode="merge"/>
+    <filter root="/content/ntFolder" mode="merge"/>
+    <filter root="/content/slingFolder" mode="merge"/>
+    <filter root="/content/dam/ctxaware" mode="merge">
+        <exclude pattern="/content/dam/ctxaware(/.*)?"/>
+        <include pattern="/content/dam/ctxaware/jcr:content(/.*)?"/>
+    </filter>
+    <filter root="/content/dam/ctxaware/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/ctxaware" mode="merge"/>
+</workspaceFilter>
